@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/damiandziaduch/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -57,14 +57,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=pl_PL.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -73,7 +73,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -84,17 +84,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
-export PERL5LIB=/Volumes/Projekty/Foture/cryptoideas/platform/web:$PERL5LIB
-export DBD_MYSQL_CFLAGS="-I/usr/local/opt/mysql@5.7/include/mysql/ -I/usr/local/opt/openssl/include/openssl"
-export DBD_MYSQL_LIBS="-L/usr/local/opt/openssl/lib -L/usr/local/opt/mysql@5.7/lib/ -lmysqlclient"
-export DBD_MYSQL_EMBEDDED=
-export DBD_MYSQL_CONFIG=mysql_config
-export DBD_MYSQL_NOCATCHSTDERR=0
-export DBD_MYSQL_NOFOUNDROWS=0
-export DBD_MYSQL_NOSSL=
-export DBD_MYSQL_TESTDB=test
-export DBD_MYSQL_TESTHOST=localhost
-export DBD_MYSQL_TESTPASSWORD=
-export DBD_MYSQL_TESTPORT=3306
-export DBD_MYSQL_TESTUSER=root
+## Perl
+#eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+#export PERL5LIB=/Volumes/Projekty/Foture/cryptoideas/platform/web:$PERL5LIB
+#export DBD_MYSQL_CFLAGS="-I/usr/local/opt/mysql@5.7/include/mysql/ -I/usr/local/opt/openssl/include/openssl"
+#export DBD_MYSQL_LIBS="-L/usr/local/opt/openssl/lib -L/usr/local/opt/mysql@5.7/lib/ -lmysqlclient"
+#export DBD_MYSQL_EMBEDDED=
+#export DBD_MYSQL_CONFIG=mysql_config
+#export DBD_MYSQL_NOCATCHSTDERR=0
+#export DBD_MYSQL_NOFOUNDROWS=0
+#export DBD_MYSQL_NOSSL=
+#export DBD_MYSQL_TESTDB=test
+#export DBD_MYSQL_TESTHOST=localhost
+#export DBD_MYSQL_TESTPASSWORD=
+#export DBD_MYSQL_TESTPORT=3306
+#export DBD_MYSQL_TESTUSER=root
