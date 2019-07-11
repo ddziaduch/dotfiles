@@ -6,6 +6,8 @@
 	editor = vim
 [credential]
 	helper = osxkeychain
+[push]
+	default = simple
 # GetResponse
-[includeIf "gitdir:/data/www"]
+[includeIf "gitdir:/data/www/"]
 	path = /data/www/.gitconfig
