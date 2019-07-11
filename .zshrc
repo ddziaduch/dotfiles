@@ -99,3 +99,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 #export DBD_MYSQL_TESTPASSWORD=
 #export DBD_MYSQL_TESTPORT=3306
 #export DBD_MYSQL_TESTUSER=root
+## Node v8
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+## docker-compose
+export COMPOSE_HTTP_TIMEOUT=600

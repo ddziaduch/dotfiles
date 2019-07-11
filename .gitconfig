@@ -6,3 +6,6 @@
 	editor = vim
 [credential]
 	helper = osxkeychain
+# GetResponse
+[includeIf "gitdir:/data/www"]
+	path = /data/www/.gitconfig
