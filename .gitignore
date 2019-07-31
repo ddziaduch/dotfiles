@@ -27,3 +27,6 @@ Public
 .config
 .viminfo
 .zcompdump*
+.php_history
+.node_repl_history
+

@@ -103,3 +103,4 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 ## docker-compose
 export COMPOSE_HTTP_TIMEOUT=600
+
