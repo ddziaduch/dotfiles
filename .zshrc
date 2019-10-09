@@ -107,3 +107,4 @@ export COMPOSE_HTTP_TIMEOUT=600
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+alias codewars='open https://www.codewars.com/kata/search/rust?q=\&beta=false\&order_by=published_at+asc'
