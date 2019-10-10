@@ -4,11 +4,13 @@
 [core]
 	autocrlf = input
 	editor = vim
-	excludesfile = /Users/ddziaduch/global.gitignore
+	excludesfile = /Users/ddziaduch/.gitignore.global
 [credential]
 	helper = osxkeychain
 [push]
 	default = simple
-# GetResponse
+# local
+[include]
+	path = ~/.gitconfig.local
 [includeIf "gitdir:/data/www/"]
 	path = /data/www/.gitconfig
