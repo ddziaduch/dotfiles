@@ -9,6 +9,8 @@
 	helper = osxkeychain
 [push]
 	default = simple
+[alias]
+	vommit = !sh -c \"cat ~/.gitvommit\"
 # local
 [include]
 	path = ~/.gitconfig.local
