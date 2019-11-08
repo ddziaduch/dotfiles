@@ -13,6 +13,4 @@
 	vommit = !sh -c \"cat ~/.gitvommit\"
 # local
 [include]
-	path = ~/.gitconfig.local
-[includeIf "gitdir:/data/www/"]
-	path = /data/www/.gitconfig
+	path = /Users/ddziaduch/.gitconfig.local

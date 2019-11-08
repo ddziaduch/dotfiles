@@ -1,2 +1,2 @@
-[includeIf "gitdir:/data/www/"]
-	path = /data/www/.gitconfig
+[includeIf "gitdir:/Volumes/data/www/"]
+	path = /Volumes/data/www/.gitconfig
