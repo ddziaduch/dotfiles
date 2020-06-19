@@ -1,5 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+source .commonrc
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -17,7 +16,7 @@ ZSH_THEME="robbyrussell"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -32,7 +31,7 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -42,7 +41,7 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -51,29 +50,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse baska baska)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions baska)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-export LANG=pl_PL.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -84,30 +65,6 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-## Perl
-#eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
-#export PERL5LIB=/Volumes/Projekty/Foture/cryptoideas/platform/web:$PERL5LIB
-#export DBD_MYSQL_CFLAGS="-I/usr/local/opt/mysql@5.7/include/mysql/ -I/usr/local/opt/openssl/include/openssl"
-#export DBD_MYSQL_LIBS="-L/usr/local/opt/openssl/lib -L/usr/local/opt/mysql@5.7/lib/ -lmysqlclient"
-#export DBD_MYSQL_EMBEDDED=
-#export DBD_MYSQL_CONFIG=mysql_config
-#export DBD_MYSQL_NOCATCHSTDERR=0
-#export DBD_MYSQL_NOFOUNDROWS=0
-#export DBD_MYSQL_NOSSL=
-#export DBD_MYSQL_TESTDB=test
-#export DBD_MYSQL_TESTHOST=localhost
-#export DBD_MYSQL_TESTPASSWORD=
-#export DBD_MYSQL_TESTPORT=3306
-#export DBD_MYSQL_TESTUSER=root
-## Node v8
-export PATH="/usr/local/opt/node@8/bin:$PATH"
-## docker-compose
-export COMPOSE_HTTP_TIMEOUT=600
 
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-alias codewars='open https://www.codewars.com/kata/search/rust?q=\&beta=false\&order_by=published_at+asc'
-
-## brew rustup-init
-export PATH="$HOME/.cargo/bin:$PATH"
+### upgrade & update
+alias upgrade="brew update && brew upgrade && npm -g update && composer global update && upgrade_oh_my_zsh"

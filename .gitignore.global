@@ -29,3 +29,6 @@ Temporary Items
 
 # JetBrains
 .idea
+
+# PhpUnit
+.phpunit.result.cache

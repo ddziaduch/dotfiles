@@ -3,12 +3,14 @@
 	email = damian@dziaduch.pl
 [core]
 	autocrlf = input
-	editor = vim
+	editor = emacs
 	excludesfile = /Users/ddziaduch/.gitignore.global
 [credential]
 	helper = osxkeychain
 [push]
 	default = simple
+[pull]
+	rebase = false
 [alias]
 	vommit = !sh -c \"cat ~/.gitvommit\"
 # local

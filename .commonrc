@@ -1,0 +1,26 @@
+### add homebrew to PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+
+### add homebrew to MANPATH
+export MANPATH="/usr/local/man:$MANPATH"
+
+### set Polish as default lang
+export LANG=pl_PL.UTF-8
+
+### use emacs as default editor
+export EDITOR='emacs'
+
+### setup ssh
+export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+## docker-compose
+export COMPOSE_HTTP_TIMEOUT=600
+
+## add path to rustup-init
+export PATH="$HOME/.cargo/bin:$PATH"
+
+## add path to composer global
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+## set COMPOSER_HOME
+export COMPOSER_HOME="$HOME/.composer"
