@@ -1,1 +1,1 @@
-source .commonrc
+source $HOME/.commonrc
