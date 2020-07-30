@@ -1,5 +1,5 @@
 .source .lineContent {
-    font-size: 13x!important;
-    line-spacing: 1.2;
-    font-family: "Menlo", monospace!important;
+    font-size: 13px !important;
+    line-height: 16px !important;
+    font-family: "JetBrains Mono", monospace !important;
 }
