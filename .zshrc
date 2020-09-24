@@ -68,7 +68,8 @@ source $ZSH/oh-my-zsh.sh
 #
 
 ### upgrade & update
-alias upgrade="brew update && brew upgrade && npm -g update && composer global update && upgrade_oh_my_zsh"
+alias upgrade="brew update && brew upgrade && npm -g update && composer global update && omz update"
 
 ### zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
