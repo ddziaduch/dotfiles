@@ -3,3 +3,7 @@
     line-height: 16px !important;
     font-family: "JetBrains Mono", monospace !important;
 }
+
+.frxouter .path .fileRevisionPathLink {
+    font-family: "JetBrains Mono", monospace !important;
+}
