@@ -3,7 +3,7 @@
 	email = damian@dziaduch.pl
 [core]
 	autocrlf = input
-	editor = vim
+	editor = nano
 	excludesfile = /Users/ddziaduch/.gitignore.global
 [credential]
 	helper = osxkeychain
