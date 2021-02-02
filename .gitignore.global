@@ -32,3 +32,6 @@ Temporary Items
 
 # PhpUnit
 .phpunit.result.cache
+
+# phpcs
+.php_cs.cache
