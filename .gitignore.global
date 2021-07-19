@@ -35,3 +35,6 @@ Temporary Items
 
 # phpcs
 .php_cs.cache
+
+# php-cs-fixer
+.php-cs-fixer.cache

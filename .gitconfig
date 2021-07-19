@@ -1,9 +1,10 @@
 [user]
 	name = Damian Dziaduch
 	email = damian@dziaduch.pl
+	username = ddziaduch
 [core]
 	autocrlf = input
-	editor = nano
+	editor = vim
 	excludesfile = /Users/ddziaduch/.gitignore.global
 [credential]
 	helper = osxkeychain
@@ -13,6 +14,7 @@
 	rebase = false
 [alias]
 	vommit = !sh -c \"cat ~/.gitvommit\"
+	branch-name = git branch --show-current
 # local
 [include]
 	path = /Users/ddziaduch/.gitconfig.local
