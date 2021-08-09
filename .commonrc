@@ -8,7 +8,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 export LANG=pl_PL.UTF-8
 
 ### use emacs as default editor
-export EDITOR='emacs'
+export EDITOR='vim'
 
 ### setup ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
