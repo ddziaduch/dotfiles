@@ -1,3 +1,4 @@
+.DS_Store
 .CFUserTextEncoding
 .Trash
 .anyconnect
@@ -31,3 +32,4 @@ Public
 bin
 .docker
 .gitconfig.local
+.zsh_sessions
