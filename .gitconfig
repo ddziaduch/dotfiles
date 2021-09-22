@@ -15,6 +15,6 @@
 [alias]
 	vommit = !sh -c \"cat ~/.gitvommit\"
 	branch-name = git branch --show-current
-# local
-[include]
-	path = ~/.gitconfig.local
+# work
+[includeIf "gitdir:/Volumes/work/"]
+	path = /Volumes/work/.gitconfig

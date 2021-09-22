@@ -33,3 +33,5 @@ bin
 .docker
 .gitconfig.local
 .zsh_sessions
+.aws
+.vim
