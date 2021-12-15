@@ -21,3 +21,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 export COMPOSER_HOME="$HOME/.composer"
+
+if [ -f ~/.commonrc.local ]; then
+	source ~/.commonrc.local
+fi
