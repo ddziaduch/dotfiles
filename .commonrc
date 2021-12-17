@@ -25,3 +25,8 @@ export COMPOSER_HOME="$HOME/.composer"
 if [ -f ~/.commonrc.local ]; then
 	source ~/.commonrc.local
 fi
+
+# rust
+if [ -f ~/.cargo/env ]; then
+	source $HOME/.cargo/env
+fi
