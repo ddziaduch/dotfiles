@@ -1,4 +1,3 @@
-source ~/.commonrc
 source $HOME/.commonrc
 
 # Path to your oh-my-zsh installation.
@@ -27,8 +26,6 @@ DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
@@ -69,5 +66,10 @@ source $ZSH/oh-my-zsh.sh
 alias upgrade="brew update && brew upgrade && npm -g update && composer global update && omz update"
 
 ### zsh-autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+	source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
+if [ -f /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+	source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi

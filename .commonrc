@@ -1,8 +1,8 @@
 ### add homebrew to PATH
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 
 ### add homebrew to MANPATH
-export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:/opt/homebrew/manpages:$MANPATH"
 
 export LANG=pl_PL.UTF-8
 
@@ -21,3 +21,12 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 export COMPOSER_HOME="$HOME/.composer"
+
+if [ -f ~/.commonrc.local ]; then
+	source ~/.commonrc.local
+fi
+
+# rust
+if [ -f ~/.cargo/env ]; then
+	source $HOME/.cargo/env
+fi
