@@ -35,3 +35,9 @@ bin
 .zsh_sessions
 .aws
 .vim
+.cargo
+.profile
+.rustup
+.vscode
+.zprofile
+.zshenv
